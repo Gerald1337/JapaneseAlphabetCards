@@ -1,0 +1,32 @@
+mat-button-toggle{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-toggle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates 3 columns */
+    grid-gap: 10px; /* adds a 10px gap between grid items */
+  }
+  
+.hiragana-font-size{
+    font-size: xx-large;
+}
+
+.screen-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3F51B5;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to vertically center the text */
+    box-sizing: border-box; /* Add this line to adjust the box model */
+}

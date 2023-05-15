@@ -1,1 +1,146 @@
-<p>home works!</p>
+<div class="screen-container">
+    <h1>Hiragana</h1>
+    <div class="button-toggle-container">
+        <mat-button-toggle value="hiragana_vowels" (click)="modifyLearningList(hiragana_vowels)">
+            <div>
+                vowels
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_vowels[0].char}} {{hiragana_vowels[1].char}} {{hiragana_vowels[2].char}} {{hiragana_vowels[3].char}} {{hiragana_vowels[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_k" (click)="modifyLearningList(hiragana_k)">
+            <div>
+                k
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_k[0].char}} {{hiragana_k[1].char}} {{hiragana_k[2].char}} {{hiragana_k[3].char}} {{hiragana_k[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_s" (click)="modifyLearningList(hiragana_s)">
+            <div>
+                s
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_s[0].char}} {{hiragana_s[1].char}} {{hiragana_s[2].char}} {{hiragana_s[3].char}} {{hiragana_s[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_t" (click)="modifyLearningList(hiragana_t)">
+            <div>
+                t
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_t[0].char}} {{hiragana_t[1].char}} {{hiragana_t[2].char}} {{hiragana_t[3].char}} {{hiragana_t[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_n" (click)="modifyLearningList(hiragana_n)">
+            <div>
+                n
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_n[0].char}} {{hiragana_n[1].char}} {{hiragana_n[2].char}} {{hiragana_n[3].char}} {{hiragana_n[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_h" (click)="modifyLearningList(hiragana_h)">
+            <div>
+                h
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_h[0].char}} {{hiragana_h[1].char}} {{hiragana_h[2].char}} {{hiragana_h[3].char}} {{hiragana_h[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_m" (click)="modifyLearningList(hiragana_m)">
+            <div>
+                m
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_m[0].char}} {{hiragana_m[1].char}} {{hiragana_m[2].char}} {{hiragana_m[3].char}} {{hiragana_m[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_y" (click)="modifyLearningList(hiragana_y)">
+            <div>
+                y
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_y[0].char}} {{hiragana_y[1].char}} {{hiragana_y[2].char}}
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_r" (click)="modifyLearningList(hiragana_r)">
+            <div>
+                r
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_r[0].char}} {{hiragana_r[1].char}} {{hiragana_r[2].char}} {{hiragana_r[3].char}} {{hiragana_r[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_w" (click)="modifyLearningList(hiragana_w)">
+            <div>
+                w
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_w[0].char}} {{hiragana_w[1].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_g" (click)="modifyLearningList(hiragana_g)">
+            <div>
+                s
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_g[0].char}} {{hiragana_g[1].char}} {{hiragana_g[2].char}} {{hiragana_g[3].char}} {{hiragana_g[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_z" (click)="modifyLearningList(hiragana_z)">
+            <div>
+                z
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_z[0].char}} {{hiragana_z[1].char}} {{hiragana_z[2].char}} {{hiragana_z[3].char}} {{hiragana_z[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_d" (click)="modifyLearningList(hiragana_d)">
+            <div>
+                d
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_d[0].char}} {{hiragana_d[1].char}} {{hiragana_d[2].char}} {{hiragana_d[3].char}} {{hiragana_d[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_b" (click)="modifyLearningList(hiragana_b)">
+            <div>
+                b
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_b[0].char}} {{hiragana_b[1].char}} {{hiragana_b[2].char}} {{hiragana_b[3].char}} {{hiragana_b[4].char}} 
+            </div>
+        </mat-button-toggle>
+        
+        <mat-button-toggle value="hiragana_p" (click)="modifyLearningList(hiragana_p)">
+            <div>
+                p
+            </div>
+            <div class="hiragana-font-size">
+                {{hiragana_p[0].char}} {{hiragana_p[1].char}} {{hiragana_p[2].char}} {{hiragana_p[3].char}} {{hiragana_p[4].char}} 
+            </div>
+        </mat-button-toggle>
+    </div>
+</div>
+
+<footer>
+    <button mat-raised-button (click)="startLearning()">Start</button>
+    <div>
+        <mat-checkbox [(ngModel)]="randomizeOrder">Randomize Order</mat-checkbox>
+    </div>    
+</footer>
