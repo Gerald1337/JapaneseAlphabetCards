@@ -16,6 +16,7 @@ mat-button-toggle{
 .screen-container{
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 footer {
@@ -29,4 +30,19 @@ footer {
     justify-content: space-between;
     align-items: center; /* Add this line to vertically center the text */
     box-sizing: border-box; /* Add this line to adjust the box model */
+}
+
+.bottom-margin{
+    margin-bottom: 20px;
+}
+
+.chip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-chip{
+    margin-left: 10px;
+    margin-right: 10px;
 }
