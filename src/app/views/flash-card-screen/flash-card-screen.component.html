@@ -1,0 +1,23 @@
+<div class="screen-container">
+    <mat-stepper linear #stepper>
+        <mat-step *ngFor="let item of flashCardData">
+            <mat-card class="flash-card" [class.flipped]="isFlipped" (click)="flipCard()">
+                <div class="front">
+                    <mat-card-content class="centered card-font">
+                        {{item.char}}
+                    </mat-card-content>
+                </div>
+                <div class="back">
+                    <mat-card-content class="centered card-font">
+                        {{item.romaji}}
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </mat-step>
+    </mat-stepper>
+</div>
+
+<footer>
+    <button mat-button (click)="stepper.previous(); isFlipped=false">Back</button>
+    <button mat-button (click)="stepper.next(); isFlipped=false">Next</button>
+</footer>

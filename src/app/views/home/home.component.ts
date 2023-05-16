@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { HiraganaTranslationsService } from 'src/app/services/hiragana-translations.service';
 
 @Component({
@@ -7,8 +8,9 @@ import { HiraganaTranslationsService } from 'src/app/services/hiragana-translati
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private hiraganaLearningService: HiraganaTranslationsService) { }
+  constructor(private hiraganaLearningService: HiraganaTranslationsService, private router: Router) { }
 
+  startLearningEnabled:boolean = false
   randomizeOrder:boolean = false
   hiragana:any
 
@@ -34,7 +36,6 @@ export class HomeComponent {
     this.initGetHiragana().then(value=>{
       this.createCategories()
     })
-
   }
 
   initGetHiragana(): Promise<any> {
@@ -74,7 +75,9 @@ export class HomeComponent {
   }
 
   startLearning(){
-
+    this.setLocalStorageWithFlashCardData()
+    this.router.navigate(['/learning']);
+    
   }
 
   modifyLearningList(input:any){
@@ -86,7 +89,28 @@ export class HomeComponent {
         this.masterLearningList.push(character);
       }
     })
-    console.log(this.masterLearningList)
+
+    this.checkIfStartLearningButtonNeedsTobeEnabled()
+  }
+
+  checkIfStartLearningButtonNeedsTobeEnabled(){
+    if(this.masterLearningList.length <= 0){
+      console.log("here")
+      this.startLearningEnabled = false
+    }
+    else{
+      this.startLearningEnabled = true
+    }
+  }
+
+  setLocalStorageWithFlashCardData(){
+    var masterListAsString = ""
+    this.masterLearningList.forEach((letter)=>{
+      console.log(letter.char + " " + letter.romaji)
+      masterListAsString = masterListAsString + letter.char + " " + letter.romaji + " ; "
+    })
+
+    sessionStorage.setItem("listToLearn", masterListAsString)
   }
   
 }

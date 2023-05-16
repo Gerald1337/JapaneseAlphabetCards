@@ -150,7 +150,7 @@
 </div>
 
 <footer>
-    <button mat-raised-button (click)="startLearning()">Start</button>
+    <button [disabled]="!startLearningEnabled" mat-raised-button (click)="startLearning()">Start</button>
     <div>
         <mat-checkbox [(ngModel)]="randomizeOrder">Randomize Order</mat-checkbox>
     </div>    

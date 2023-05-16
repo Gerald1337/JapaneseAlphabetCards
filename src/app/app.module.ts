@@ -12,11 +12,16 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatChipsModule} from '@angular/material/chips';
+import { FlashCardScreenComponent } from './views/flash-card-screen/flash-card-screen.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FlashCardScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,9 @@ import {MatChipsModule} from '@angular/material/chips';
     HttpClientModule,
     MatCheckboxModule,
     FormsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatCardModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
